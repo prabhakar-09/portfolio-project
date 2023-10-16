@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Prabhakar Kulkarni</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about" aria-label="About">About</a></li>
+                <li><a href="#experience" aria-label="Experience">Experience</a></li>
+                <li><a href="#projects" aria-label="Projects">Projects</a></li>
+                <li><a href="#contact" aria-label="Contact">Contact</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Prabhakar Kulkarni</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assets/profile-pic.png" alt="PK profile pic">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello I'm</p>
+            <h1 class="title">Prabhakar</h1>
+            <p class="section__text__p2">Full Stack Developer!</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Prabhakar_K_Resume.pdf')">
+                Download CV</button>
+
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                Contact Info</button>
+            </div>
+            <div class="socials-container">
+                <img src="./assets/linkedin.png" 
+                alt="My linkedin profile" class="icon"
+                onclick="location.href='https://www.linkedin.com/in/prabhakar2000/'">
+
+                <img src="./assets/github.png" 
+                alt="My github profile" class="icon"
+                onclick="location.href='https://github.com/prabhakar-09'">
+                
+                <img src="./assets/medium.png" 
+                alt="My medium profile" class="icon"
+                onclick="location.href='https://medium.com/@kulkarniprabhakar2000'">
+                
+                <img src="./assets/stack-overflow.png" 
+                alt="My Stack Overflow profile" class="icon"
+                onclick="location.href='https://stackoverflow.com/users/14858140/prabhakar-kulkarni'">
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="bio">
+            <p>Hello, I'm Prabhakar, a computer science enthusiast with a passion for coding and solving complex real-world problems using algorithmic approaches. I have a solid understanding of core computer science concepts and a thirst for knowledge, making me confident in my abilities as a software developer.</p>
+    
+            <p class="highlight">My technical skills include proficiency in programming languages such as Python, Java, and TypeScript. I also have expertise in data structures and algorithms, operating systems, computer networks, and security. I am experienced with Linux.</p>
+    
+            <p class="highlight">I am a full-stack Java developer with proficiency in both frontend and backend development. I specialize in Angular for frontend development and Spring Boot for backend development. My skills include writing REST APIs, testing with tools like Postman, and integrating with UI. Additionally, I have experience working with MySQL databases.</p>
+            <p>I am driven, dedicated, and highly organized, and I prioritize my work to ensure that I am fully focused on achieving my goals. I am always open to new challenges and opportunities to continue learning and growing as a software developer. If you're looking for a hardworking, motivated, and skilled individual, feel free to reach out to me. I would be more than happy to discuss further opportunities.</p>
+        </div>
+        <br>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img src="./assets/about-pic.png" 
+                alt="profile-picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png"
+                         alt="Experience icon" class="icon">
+                         <h3>Experience</h3>
+                         <p>1+ Years <br>Full Stack Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png"
+                        alt="Education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>Bachelor of Engineering in Information Technology. &nbsp; CGPA : 8.0/10.0</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <P></P>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#experience'">
+    </section>
+
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>TypeScript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>Angular</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>Material UI</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>Chrome Dev Tools</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>Spring Boot</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>Microservices</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>SQL & MySQL</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>BIRT Reports Tool</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>Git</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>Java & Python</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" 
+        onclick="location.href='./#projects'">
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1">
+            Browse My Recent Projects
+        </p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-pic-1.jpg" alt="Project 1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Shopping Cart Application Using Spring Boot</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/prabhakar-09'">
+                        GitHub
+                    </button>
+                </div>
+            </div>
+<br>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-pic-2.jpg" alt="Project 2" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Todo Web App using Angular</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/prabhakar-09/TODO_APP'">
+                        GitHub
+                    </button>
+                </div>
+            </div>
+
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-pic-3.jpg" alt="Project 3" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Automated Cookie Clicker using Selenium</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/prabhakar-09/cookie-clicker-project'">
+                        GitHub
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#contact'">
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" 
+                alt="Email icon" 
+                class="icon contact-icon email-icon"/>
+                <p><a href="mailto:kulkarniprabhakar2000@gmail.com">kulkarniprabhakar2000@gmail.com</a></p>
+            </div>
+        <!-- </div> -->
+        <!-- <div class="contact-info-upper-container"> -->
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" 
+                alt="linkedin icon" 
+                class="icon contact-icon"/>
+                <p><a href="https://www.linkedin.com/in/prabhakar2000/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Coypright &#169; 2023 Prabhakar Kulkarni. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
